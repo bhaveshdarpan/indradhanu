@@ -1,6 +1,6 @@
 import React from "react";
 import "./WhatWeDo.css"; // Add CSS styling here or import from a CSS file
-import raisehands from "../../assets/raise_hands.png"
+import raisehands from "../../assets/images/raise_hands.png"
 function WhatWeDo() {
   return (
     <div className="what-we-do">

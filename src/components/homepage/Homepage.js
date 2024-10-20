@@ -1,10 +1,10 @@
 import React from "react";
 import "./Homepage.css";
-import home from "../../assets/home.png";
+import home from "../../assets/images/home.png";
 import WhoWeAre from "../WhoWeAre/WhoWeAre";
 import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import Resources from "../Resources/Resources";
-import ContactUs from "../contact-us/ContactUs";
+import ContactUs from "../ContactUs/ContactUs";
 
 function Homepage() {
   return (

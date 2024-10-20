@@ -1,6 +1,6 @@
 import React from "react";
 import "./Resources.css";
-import legs from "../../assets/legs.png";
+import legs from "../../assets/images/legs.png";
 
 function Resources() {
   return (

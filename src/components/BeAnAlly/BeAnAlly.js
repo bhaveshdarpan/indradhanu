@@ -37,11 +37,11 @@ const CheckboxGroup = ({ options, name }) => (
 );
 
 const BeAnAlly = () => {
-    const [showGreeting, setShowGreeting] = useState(false);
+    // const [showGreeting, setShowGreeting] = useState(false);
 
-    const handleGreetingToggle = () => {
-        setShowGreeting(!showGreeting);
-    };
+    // const handleGreetingToggle = () => {
+    //     setShowGreeting(!showGreeting);
+    // };
 
     return (
         <main>
