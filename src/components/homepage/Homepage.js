@@ -1,9 +1,9 @@
 import React from "react";
 import "./Homepage.css";
 import home from "../../assets/home.png";
-import WhoWeAre from "../who-we-are/WhoWeAre";
-import WhatWeDo from "../what-we-do/WhatWeDo";
-import Resources from "../resources/Resources";
+import WhoWeAre from "../WhoWeAre/WhoWeAre";
+import WhatWeDo from "../WhatWeDo/WhatWeDo";
+import Resources from "../Resources/Resources";
 import ContactUs from "../contact-us/ContactUs";
 
 function Homepage() {
