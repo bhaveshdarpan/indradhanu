@@ -1,0 +1,120 @@
+/* Basic Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: inset;
+}
+
+.nav-icon img {
+  height: 50px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items li {
+  margin-left: 20px;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.vibhinn-text {
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+}
+
+.nav-social a {
+  margin-left: 15px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Hamburger Icon (for mobile) */
+.hamburger {
+  display: none; /* Hide by default */
+}
+
+/* Mobile Menu Styles */
+.nav-right.active {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-right.active ul {
+  flex-direction: column;
+}
+
+.nav-right.active ul li {
+  margin: 1rem 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile and smaller devices */
+@media (max-width: 768px) {
+  .nav-items {
+    display: none; /* Hide nav items by default */
+  }
+
+  .nav-social {
+    display: none; /* Hide social icons by default */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger only on mobile */
+  }
+
+  .nav-right.active .nav-items {
+    display: flex; /* Show nav items when menu is open */
+  }
+
+  .nav-right.active .nav-social {
+    display: flex; /* Show social icons when menu is open */
+    margin-top: 1rem;
+  }
+}
+
+/* Tablet devices */
+@media (max-width: 1024px) {
+  .nav-items li {
+    margin-left: 10px;
+  }
+
+  .nav-items li a {
+    font-size: 0.9rem;
+  }
+
+  .nav-social a {
+    font-size: 1.2rem;
+  }
+}

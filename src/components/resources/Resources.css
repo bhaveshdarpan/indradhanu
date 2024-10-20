@@ -1,0 +1,106 @@
+.resources {
+    padding: 10vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFE0C3;
+}
+
+.resources h2 {
+    font-weight: 900;
+    color: #EC7100;
+    font-size: 2.5rem;
+    margin-bottom: 5vh;
+}
+
+.resources-inner {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center the items */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+}
+
+.resource-art {
+    flex: 1 1 40%; /* Allow it to grow and shrink, with a base width of 40% */
+    max-width: 400px; /* Set a max width */
+    margin: 0 20px; /* Add horizontal margin */
+    position: relative; /* For absolute positioning of underline */
+}
+
+.resource-art img {
+    display: block;
+    width: 100%; /* Use full width */
+    border-radius: 15px; /* Add border radius for a modern look */
+}
+
+.resources-art-underline {
+    height: 9px;
+    background-color: #FFAD62;
+    width: 40%;
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjusted position for better visibility */
+}
+
+.resources-info {
+    flex: 1 1 60%; /* Allow it to grow and shrink, with a base width of 60% */
+    max-width: 600px; /* Set a max width */
+    margin: 0 20px; /* Add horizontal margin */
+}
+
+.resources-info-inner {
+    background-color: white;
+    border-radius: 15px; /* Add border radius */
+    padding: 5vh 3vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+}
+
+.resources-info-inner p {
+    font-size: 1rem; /* Adjust font size for better readability */
+    font-weight: 400;
+    color: #EC7100;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 2vh; /* Adjust margin for spacing */
+    text-align: center; /* Center the text */
+}
+
+.resources-info-inner a {
+    color: #EC7100;
+}
+
+#resource-view-more {
+    padding: 10px 20px;
+    border: 2px solid #EC7100;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #EC7100;
+    transition: 0.3s;
+    background-color: transparent; /* Keep it transparent */
+}
+
+#resource-view-more:hover {
+    background-color: rgba(236, 113, 0, 0.8);
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .resources-inner {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+    }
+    
+    .resource-art, .resources-info {
+        max-width: 90%; /* Allow full width on small screens */
+    }
+
+    .resources-info-inner {
+        width: 100%; /* Use full width on small screens */
+    }
+}
