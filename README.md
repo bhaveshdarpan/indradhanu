@@ -175,7 +175,3 @@ This section outlines the naming conventions and folder structure followed in th
 2. **camelCase** for hooks, utils, and service files.
 3. **kebab-case** for asset file names (e.g., images, fonts).
 4. **Consistency** is key: Always follow the same naming convention across your codebase for readability and maintainability.
-
----
-
-By following these conventions, the codebase will remain organized, consistent, and easy to maintain as the project grows.
