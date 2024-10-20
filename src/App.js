@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Homepage from "./components/homepage/Homepage.js";
-import Resources from "./components/resources/Resources";
-import ContactUs from "./components/contact-us/ContactUs";
-import Footer from "./components/footer/Footer";
-import AboutUs from "./components/about-us/AboutUs";
-import Projects from "./components/projects/Projects";
-import BeAnAlly from "./components/be-an-ally/BeAnAlly";
+import Resources from "./components/Resources";
+import ContactUs from "./components/ContactUs/ContactUs";
+import Footer from "./components/Footer/Footer";
+import AboutUs from "./components/AboutUs/AboutUs";
+import Projects from "./components/Projects/Projects";
+import BeAnAlly from "./components/BeAnAlly/BeAnAlly";
 import "./App.css";
 
 function App() {

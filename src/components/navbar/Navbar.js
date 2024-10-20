@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import "./Navbar.css";
-import Hamburger from "../hamburger/Hamburger"; // Import the Hamburger component
+import Hamburger from "../Hamburger/Hamburger"; // Import the Hamburger component
 import indradhanuLogo from "../../assets/indradhanu-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";

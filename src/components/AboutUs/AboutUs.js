@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import StudentCard from "../member-cards/StudentCard";
-import FacultyCard from "../member-cards/FacultyCard";
+import StudentCard from "../MemberCards/StudentCard";
+import FacultyCard from "../MemberCards/FacultyCard";
 import "./AboutUs.css";
-import teamData from "../about-us/teamData"; // Import the separated teamData
+import teamData from "./teamData"; // Import the separated teamData
 
 function AboutUs() {
   const [selectedYear, setSelectedYear] = useState("2024-25");
