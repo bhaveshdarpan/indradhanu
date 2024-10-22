@@ -4,13 +4,13 @@ const teamData = {
       {
         name: "Prof. Angelie Multani (She/Her)",
         role: "Dean, Diversity and Inclusion",
-        imgSrc: require("../../assets/images/team-pictures/coordi-pics-2324/angelie.jpeg"),
+        imgSrc: require("../../assets/images/team-pictures/faculty-pics/angelie.jpeg"),
         link: "https://www.linkedin.com/in/angelie-multani/",
       },
       {
         name: "Dr. Shahzad Gani (He/Him)",
         role: "Faculty Advisor",
-        imgSrc: require("../../assets/images/team-pictures/coordi-pics-2324/shahzad.jpeg"),
+        imgSrc: require("../../assets/images/team-pictures/faculty-pics/shahzad.jpeg"),
         link: "https://www.linkedin.com/in/shahzad-gani/",
       },
     ],
@@ -35,13 +35,13 @@ const teamData = {
       {
         name: "Prof. Angelie Multani (She/Her)",
         role: "Dean, Diversity and Inclusion",
-        imgSrc: require("../../assets/images/team-pictures/coordi-pics-2324/angelie.jpeg"),
+        imgSrc: require("../../assets/images/team-pictures/faculty-pics/angelie.jpeg"),
         link: "https://www.linkedin.com/in/angelie-multani/",
       },
       {
         name: "Dr. Shahzad Gani (He/Him)",
         role: "Faculty Advisor",
-        imgSrc: require("../../assets/images/team-pictures/coordi-pics-2324/shahzad.jpeg"),
+        imgSrc: require("../../assets/images/team-pictures/faculty-pics/shahzad.jpeg"),
         link: "https://www.linkedin.com/in/shahzad-gani/",
       },
     ],
@@ -85,7 +85,7 @@ const teamData = {
       {
         name: "Bhavesh Darpan",
         role: "B.Tech. Engineering and Computational Mechanics",
-        imgSrc: require("../../assets/images/team-pictures/coordi-pics-2324/bhavesh.jpeg"),
+        imgSrc: require("../../assets/images/team-pictures/coordi-pics-2324/bhavesh.jpg"),
         link: "https://www.linkedin.com/in/bhaveshdarpan/",
       },
       // Add more students for 2023-24...
@@ -96,10 +96,15 @@ const teamData = {
       {
         name: "Prof. Angelie Multani (She/Her)",
         role: "Dean, Diversity and Inclusion",
-        imgSrc: require("../../assets/images/team-pictures/coordi-pics-2324/angelie.jpeg"),
+        imgSrc: require("../../assets/images/team-pictures/faculty-pics/angelie.jpeg"),
         link: "https://www.linkedin.com/in/angelie-multani/",
       },
-      
+      {
+        name: "Prof. Arudra (He/Him)",
+        role: "Faculty Advisor",
+        imgSrc: require("../../assets/images/team-pictures/faculty-pics/arudra.jpeg"),
+        link: "https://www.linkedin.com/in/angelie-multani/",
+      },
     ],
     students: [
       {
