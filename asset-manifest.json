@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/indradhanu/static/css/main.0a740f64.css",
+    "main.js": "/indradhanu/static/js/main.e48bd6a6.js",
+    "static/js/488.2d6e8990.chunk.js": "/indradhanu/static/js/488.2d6e8990.chunk.js",
+    "static/media/about-us.png": "/indradhanu/static/media/about-us.a2051f77c85ea43f314d.png",
+    "static/media/bhavesh.jpg": "/indradhanu/static/media/bhavesh.55477f1581ce4105beef.jpg",
+    "static/media/raise_hands.png": "/indradhanu/static/media/raise_hands.61ff643a30298ee6ae34.png",
+    "static/media/shantanu.jpeg": "/indradhanu/static/media/shantanu.10d2ff15b2fec3d17566.jpeg",
+    "static/media/shahzad.jpeg": "/indradhanu/static/media/shahzad.03c0c72629e817d2a8f5.jpeg",
+    "static/media/indradhanu-charter.pdf": "/indradhanu/static/media/indradhanu-charter.5831eec8ac8701dfaed7.pdf",
+    "static/media/home.png": "/indradhanu/static/media/home.345623b93e19a0a6a6ef.png",
+    "static/media/rahul-b.jpeg": "/indradhanu/static/media/rahul-b.ed4bd4cb2738a6b2b859.jpeg",
+    "static/media/rahul-j.jpeg": "/indradhanu/static/media/rahul-j.a1e121b9804f7e6ec3a9.jpeg",
+    "static/media/legs.png": "/indradhanu/static/media/legs.542e9e68c723c5660317.png",
+    "static/media/ambrish.jpeg": "/indradhanu/static/media/ambrish.dea6a9a44b996bde4d76.jpeg",
+    "static/media/vaivab.jpeg": "/indradhanu/static/media/vaivab.52830a37e06bda4716ae.jpeg",
+    "static/media/iitdelhi.png": "/indradhanu/static/media/iitdelhi.bb29c9c8caf37602c912.png",
+    "static/media/vanya.jpeg": "/indradhanu/static/media/vanya.3ca900a8bb1f531c5706.jpeg",
+    "static/media/indradhanu-logo.png": "/indradhanu/static/media/indradhanu-logo.30982d8e3d4bca807909.png",
+    "static/media/arudra.jpeg": "/indradhanu/static/media/arudra.4635f4eab7e764981b25.jpeg",
+    "static/media/angelie.jpeg": "/indradhanu/static/media/angelie.1a9a44025a6ad68277aa.jpeg",
+    "index.html": "/indradhanu/index.html",
+    "main.0a740f64.css.map": "/indradhanu/static/css/main.0a740f64.css.map",
+    "main.e48bd6a6.js.map": "/indradhanu/static/js/main.e48bd6a6.js.map",
+    "488.2d6e8990.chunk.js.map": "/indradhanu/static/js/488.2d6e8990.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a740f64.css",
+    "static/js/main.e48bd6a6.js"
+  ]
+}
