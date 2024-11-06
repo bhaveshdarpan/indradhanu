@@ -1,13 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Homepage from "./components/Homepage/Homepage.js";
-import Resources from "./components/Resources/Resources.js";
-import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
-import AboutUs from "./components/AboutUs/AboutUs";
-import Projects from "./components/Projects/Projects";
-import BeAnAlly from "./components/BeAnAlly/BeAnAlly";
+import Homepage from "./pages/Homepage/Homepage.js";
+import AboutUs from "./pages/AboutUs/AboutUs.js";
+import Projects from "./pages/Projects/Projects.js";
+import BeAnAlly from "./pages/BeAnAlly/BeAnAlly";
 import "./App.css";
 
 function App() {
@@ -19,10 +17,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about-us" element={<AboutUs />} />
-            <Route path="#resources" element={<Resources />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/be-an-ally" element={<BeAnAlly />} />
-            <Route path="#contact-us" element={<ContactUs />} />
             {/* Add more routes as needed */}
           </Routes>
         </main>

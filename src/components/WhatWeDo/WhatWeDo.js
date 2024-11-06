@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./WhatWeDo.css"; // Add CSS styling here or import from a CSS file
-import raisehands from "../../assets/images/raise_hands.png";
+import raisehands from "../../assets/images/raise-hands.png";
 function WhatWeDo() {
   return (
     <div className="what-we-do">

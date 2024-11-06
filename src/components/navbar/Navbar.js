@@ -1,16 +1,24 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import Hamburger from "../Hamburger/Hamburger"; // Import the Hamburger component
+import Hamburger from "../Hamburger/Hamburger";
 import indradhanuLogo from "../../assets/images/indradhanu-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const scrollToSection = (sectionId) => {
+    navigate("/");
+    setTimeout(() => {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    }, 100); // Small delay to ensure navigation completes
   };
 
   return (
@@ -36,10 +44,10 @@ const Navbar = () => {
             <Link to="/projects">Our Projects</Link>
           </li>
           <li>
-            <Link to="#resources">Resources</Link>
+            <button onClick={() => scrollToSection("resources")}>Resources</button>
           </li>
           <li>
-            <Link to="#contact-us">Contact Us</Link>
+            <button onClick={() => scrollToSection("contact-us")}>Contact Us</button>
           </li>
           <li>
             <Link to="/be-an-ally">Be an Ally</Link>
@@ -55,7 +63,6 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      {/* Use the Hamburger component */}
       {window.innerWidth < 768 && (
         <Hamburger isOpen={isMobileMenuOpen} toggleMenu={toggleMenu} />
       )}

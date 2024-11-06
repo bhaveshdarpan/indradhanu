@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import StudentCard from "../MemberCards/StudentCard";
-import FacultyCard from "../MemberCards/FacultyCard";
+import StudentCard from "../../components/MemberCards/StudentCard";
+import FacultyCard from "../../components/MemberCards/FacultyCard";
 import "./AboutUs.css";
 import teamData from "./teamData"; // Import the separated teamData
 
@@ -11,7 +11,10 @@ function AboutUs() {
       <main>
         {/* About Us Section */}
         <div className="about-us-image">
-          <img src={require("../../assets/images/about-us.png")} alt="About Us" />
+          <img
+            src={require("../../assets/images/about-us.png")}
+            alt="About Us"
+          />
         </div>
         <div className="about-us-text">
           <h2>Indradhanu</h2>
@@ -89,7 +92,11 @@ function AboutUs() {
                 discrimination in their thoughts and actions.
               </li>
             </ul>
-            <a href={require("../../assets/docs/indradhanu-charter.pdf")} target="_blank" rel="noreferrer">
+            <a
+              href={require("../../assets/docs/indradhanu-charter.pdf")}
+              target="_blank"
+              rel="noreferrer"
+            >
               Get Charter
             </a>
           </div>

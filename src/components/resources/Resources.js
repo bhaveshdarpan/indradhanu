@@ -5,7 +5,7 @@ import legs from "../../assets/images/legs.png";
 function Resources() {
   return (
     <div className="resources" id="resources">
-      <h2>Resources</h2>
+      <h2>resources</h2>
       <div className="resources-inner">
         <div className="resource-art">
           <img src={legs} alt="Legs" />

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css"; // Add CSS styling here or import from a CSS file
 import indradhanuLogo from "../../assets/images/indradhanu-logo.png";
-import iitdelhi from "../../assets/images/iitdelhi.png";
+import iitdelhi from "../../assets/images/iitdelhi-logo.png";
 function Footer() {
   return (
     <>

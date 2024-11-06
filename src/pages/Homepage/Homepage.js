@@ -1,10 +1,10 @@
 import React from "react";
 import "./Homepage.css";
 import home from "../../assets/images/home.png";
-import WhoWeAre from "../WhoWeAre/WhoWeAre";
-import WhatWeDo from "../WhatWeDo/WhatWeDo";
-import Resources from "../Resources/Resources";
-import ContactUs from "../ContactUs/ContactUs";
+import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
+import WhatWeDo from "../../components/WhatWeDo/WhatWeDo";
+import Resources from "../../components/Resources/Resources";
+import ContactUs from "../../components/ContactUs/ContactUs";
 
 function Homepage() {
   return (
@@ -15,7 +15,10 @@ function Homepage() {
       <div className="homepage-content">
         <WhoWeAre />
         <WhatWeDo />
-        <Resources />
+        <section id="resources">
+          <Resources />
+        </section>
+
         <ContactUs />
       </div>
     </div>
