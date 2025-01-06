@@ -1,0 +1,61 @@
+vibhinn {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+vibhinn::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+vibhinn {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow-x: hidden;
+}
+
+#websitebutton {
+  position: absolute;
+  left: 11.92%;
+  bottom: 2.3%;
+  z-index: 1000;
+  background-color: aquamarine;
+  height: 20px;
+  opacity: 0;
+  width: 25%;
+}
+
+#igminor {
+  position: absolute;
+  left: 11.92%;
+  bottom: 1.7%;
+  z-index: 1000;
+  background-color: aquamarine;
+  height: 20px;
+  opacity: 0;
+  width: 25%;
+}
+
+/* #transparent {
+  position: absolute;
+  height: 80px;
+  width: 230px;
+  background-color: transparent;
+  opacity: 0.4;
+  z-index: 1000;
+  top: 5vh;
+  right: 0;
+} */
+
+#flyer {
+  width: 100%;
+}
+
+#flyer img {
+  width: 100%;
+  display: block;
+}

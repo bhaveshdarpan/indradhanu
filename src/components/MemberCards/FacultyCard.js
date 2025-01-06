@@ -3,7 +3,7 @@ import "./FacultyCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-function FacultyCard({ name, role, imgSrc, link }) {
+function FacultyCard({ name, role, description, imgSrc, link }) {
   return (
     <div className="faculty-card">
       <div className="linkedin-icon">
@@ -11,6 +11,7 @@ function FacultyCard({ name, role, imgSrc, link }) {
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
+      <p className="description">{description}</p>
       <img src={imgSrc} alt={name} />
       <h3>{name}</h3>
       <p>{role}</p>

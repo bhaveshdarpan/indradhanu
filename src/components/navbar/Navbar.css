@@ -4,8 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #fff;
-  box-shadow: inset;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+  
 }
 
 .nav-icon img {

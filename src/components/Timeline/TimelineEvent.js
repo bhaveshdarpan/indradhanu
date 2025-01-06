@@ -1,4 +1,3 @@
-// TimelineEvent.js
 import React from "react";
 
 const TimelineEvent = ({ year, title, description, icon }) => {
