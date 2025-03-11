@@ -17,7 +17,9 @@ const Navbar = () => {
   const scrollToSection = (sectionId) => {
     navigate("/");
     setTimeout(() => {
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+      document
+        .getElementById(sectionId)
+        ?.scrollIntoView({ behavior: "smooth" });
     }, 100); // Small delay to ensure navigation completes
   };
 
@@ -44,10 +46,14 @@ const Navbar = () => {
             <Link to="/projects">Our Projects</Link>
           </li>
           <li>
-            <button onClick={() => scrollToSection("resources")}>Resources</button>
+            <button onClick={() => scrollToSection("resources")}>
+              Resources
+            </button>
           </li>
           <li>
-            <button onClick={() => scrollToSection("contact-us")}>Contact Us</button>
+            <button onClick={() => scrollToSection("contact-us")}>
+              Contact Us
+            </button>
           </li>
           <li>
             <Link to="/be-an-ally">Be an Ally</Link>
