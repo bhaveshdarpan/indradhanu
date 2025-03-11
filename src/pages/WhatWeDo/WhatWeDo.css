@@ -1,136 +1,136 @@
 .what-we-do {
-    padding: 10vh 7vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+  padding: 10vh 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
 
 .what-we-do h2 {
-    font-weight: 900;
-    color: #5CCF98;
-    font-size: 2.5rem;
-    margin-bottom: 3vh;
+  font-weight: 900;
+  color: #5ccf98;
+  font-size: 2.5rem;
+  margin-bottom: 3vh;
 }
 
 .what-we-do h3 {
-    font-weight: 400;
-    color: #22AC6A;
-    font-size: 1rem;
-    margin-bottom: 5vh;
+  font-weight: 400;
+  color: #22ac6a;
+  font-size: 1rem;
+  margin-bottom: 5vh;
 }
 
 .what-we-do img {
-    width: 50%;
+  width: 50%;
 }
 
 .what-we-do-underline {
-    height: 9px;
-    background-color: #5CCF98;
-    width: 75%;
-    margin-left: calc(25% + 14vw);
+  height: 9px;
+  background-color: #5ccf98;
+  width: 75%;
+  margin-left: calc(25% + 14vw);
 }
 
 .what-we-do-cards {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10vh;
-    width: 100%;
-    gap: 20px; /* Adjust the value as needed for spacing */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10vh;
+  width: 100%;
+  gap: 20px; /* Adjust the value as needed for spacing */
 }
 
 .what-we-do-card {
-    background-color: #A5FFD4;
-    border-radius: 40px;
-    padding: 5vh 3vw;
-    width: 30%;
+  background-color: #a5ffd4;
+  border-radius: 40px;
+  padding: 5vh 3vw;
+  width: 30%;
 }
 
 .what-we-do-card i {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .what-we-do-card h4 {
-    font-size: 1.8rem;
-    margin-top: 2vh;
-    color: #286A4A;
-    font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 2vh;
+  color: #286a4a;
+  font-weight: 700;
 }
 
 .what-we-do-card p {
-    font-size: 1.3rem;
-    margin-top: 2vh;
-    color: #2D6C4E;
-    font-weight: 500;
-    margin-bottom: 5vh;
+  font-size: 1.3rem;
+  margin-top: 2vh;
+  color: #2d6c4e;
+  font-weight: 500;
+  margin-bottom: 5vh;
 }
 
 .what-we-do-card a {
-    text-decoration: none;
-    margin-top: 3vh;
-    padding: 10px 20px;
-    border: 2px solid #30C67E;
-    border-radius: 50px;
-    color: #2D6C4E;
-    font-weight: 600;
+  text-decoration: none;
+  margin-top: 3vh;
+  padding: 10px 20px;
+  border: 2px solid #30c67e;
+  border-radius: 50px;
+  color: #2d6c4e;
+  font-weight: 600;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .what-we-do {
-        padding: 5vh 5vw;
-    }
+  .what-we-do {
+    padding: 5vh 5vw;
+  }
 
-    .what-we-do h2 {
-        font-size: 2rem;
-    }
+  .what-we-do h2 {
+    font-size: 2rem;
+  }
 
-    .what-we-do h3 {
-        font-size: 0.9rem;
-    }
+  .what-we-do h3 {
+    font-size: 0.9rem;
+  }
 
-    .what-we-do img {
-        width: 70%; /* Adjusted width for smaller screens */
-    }
+  .what-we-do img {
+    width: 70%; /* Adjusted width for smaller screens */
+  }
 
-    .what-we-do-underline {
-        width: 90%; /* Adjusted width for smaller screens */
-        margin-left: 5%;
-    }
+  .what-we-do-underline {
+    width: 90%; /* Adjusted width for smaller screens */
+    margin-left: 5%;
+  }
 
-    .what-we-do-cards {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center;
-        gap: 10px; /* Reduced gap for smaller screens */
-    }
+  .what-we-do-cards {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+    gap: 10px; /* Reduced gap for smaller screens */
+  }
 
-    .what-we-do-card {
-        width: 80%; /* Adjusted width for smaller screens */
-    }
+  .what-we-do-card {
+    width: 80%; /* Adjusted width for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
-    .what-we-do h2 {
-        font-size: 1.5rem; /* Further reduced size for extra small screens */
-    }
+  .what-we-do h2 {
+    font-size: 1.5rem; /* Further reduced size for extra small screens */
+  }
 
-    .what-we-do h3 {
-        font-size: 0.8rem; /* Further reduced size for extra small screens */
-    }
+  .what-we-do h3 {
+    font-size: 0.8rem; /* Further reduced size for extra small screens */
+  }
 
-    .what-we-do img {
-        width: 90%; /* Adjusted width for mobile screens */
-    }
+  .what-we-do img {
+    width: 90%; /* Adjusted width for mobile screens */
+  }
 
-    .what-we-do-underline {
-        width: 95%; /* Adjusted width for mobile screens */
-        margin-left: 2.5%;
-    }
+  .what-we-do-underline {
+    width: 95%; /* Adjusted width for mobile screens */
+    margin-left: 2.5%;
+  }
 
-    .what-we-do-card {
-        padding: 4vh 2vw; /* Reduced padding for smaller cards */
-        width: 90%; /* Full width for cards on mobile */
-    }
+  .what-we-do-card {
+    padding: 4vh 2vw; /* Reduced padding for smaller cards */
+    width: 90%; /* Full width for cards on mobile */
+  }
 }

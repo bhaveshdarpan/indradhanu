@@ -1,197 +1,196 @@
 .about-us-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2vh;
-    background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  background-color: white;
 }
 
 .about-us-image img {
-    width: 50%;
+  width: 50%;
 }
 
 .about-us-text {
-    padding: 10vh 7vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #E2EDFF;
+  padding: 10vh 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2edff;
 }
 
 .about-us-text h2 {
-    font-weight: 900;
-    color: #315EA9;
-    font-size: 2.5rem;
-    margin-bottom: 5vh;
+  font-weight: 900;
+  color: #315ea9;
+  font-size: 2.5rem;
+  margin-bottom: 5vh;
 }
 
 .about-us-text p {
-    color: #083888;
-    font-weight: 400;
-    width: 80%;
-    margin-bottom: 5vh;
+  color: #083888;
+  font-weight: 400;
+  width: 80%;
+  margin-bottom: 5vh;
 }
 
 .charter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10vh 7vw;
-    background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 7vw;
+  background-color: white;
 }
 
 .charter-inner {
-    width: 80%;
-    background-color: #DDFFEF;
-    padding: 5vh 5vw;
-    border-radius: 50px;
+  width: 80%;
+  background-color: #ddffef;
+  padding: 5vh 5vw;
+  border-radius: 50px;
 }
 
 .charter-inner h2 {
-    font-weight: 900;
-    color: #30C67E;
-    font-size: 2.5rem;
-    margin-bottom: 5vh;
-    text-align: center;
+  font-weight: 900;
+  color: #30c67e;
+  font-size: 2.5rem;
+  margin-bottom: 5vh;
+  text-align: center;
 }
 
 .charter-inner p {
-    font-weight: 700;
-    color: #22AC6A;
-    font-size: 1rem;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 3vh;
+  font-weight: 700;
+  color: #22ac6a;
+  font-size: 1rem;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3vh;
 }
 
 .charter-inner ul {
-    color: #22AC6A;
-    font-weight: 500;
-    width: 80%;
-    margin: auto;
+  color: #22ac6a;
+  font-weight: 500;
+  width: 80%;
+  margin: auto;
 }
 li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    unicode-bidi: isolate;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
 }
 .charter-inner li {
-    margin-bottom: 2vh;
+  margin-bottom: 2vh;
 }
 
 .charter-inner a {
-    text-decoration: none;
-    color: #30C67E;
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #30C67E;
-    border-radius: 50px;
-    width: max-content;
-    margin: auto;
-    padding: 14px 30px;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: #30c67e;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #30c67e;
+  border-radius: 50px;
+  width: max-content;
+  margin: auto;
+  padding: 14px 30px;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  font-size: 1.5rem;
 }
 
 .charter-inner a:hover {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #30C67E;
-    border-radius: 50px;
-    width: max-content;
-    margin: auto;
-    padding: 14px 30px;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-    font-size: 1.5rem;
-    background-color: #30C67E;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #30c67e;
+  border-radius: 50px;
+  width: max-content;
+  margin: auto;
+  padding: 14px 30px;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  font-size: 1.5rem;
+  background-color: #30c67e;
 }
 
 .team {
-    padding: 10vh 7vw;
-    background-color: #FFF8E1;
+  padding: 10vh 7vw;
+  background-color: #fff8e1;
 }
 
 .team h2 {
-    font-weight: 900;
-    color: #D9B84B;
-    font-size: 2.5rem;
-    margin-bottom: 10vh;
-    text-align: center;
+  font-weight: 900;
+  color: #d9b84b;
+  font-size: 2.5rem;
+  margin-bottom: 10vh;
+  text-align: center;
 }
 
 .student-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
 }
 
 .faculty-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
 }
-
 
 /* Button Styles */
 .team-buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .team-buttons button {
-    background-color: #FFAD62;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    margin: 5px;
-    border-radius: 16px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #ffad62;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  margin: 5px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .team-buttons button:hover {
-    background-color: #EC7100;
+  background-color: #ec7100;
 }
 
 .team-buttons button:focus {
-    outline: none;
-    background-color: #EC7100;
+  outline: none;
+  background-color: #ec7100;
 }
 
 /* Responsiveness */
 .student-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
-    .student-cards {
-        flex-direction: column;
-        align-items: center;
-    }
+  .student-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .team-buttons button {
-        width: 100%;
-        margin: 10px 0;
-    }
+  .team-buttons button {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
