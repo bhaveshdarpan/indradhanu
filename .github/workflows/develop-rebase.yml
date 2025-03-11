@@ -1,0 +1,49 @@
+name: Rebase Develop with Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  rebase-develop:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch full history to allow rebase
+          token: ${{ secrets.REPO_REBASE_PAT }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Check if develop branch exists remotely
+        run: |
+          if ! git ls-remote --exit-code origin develop; then
+            echo "Develop branch does not exist remotely. Exiting."
+            exit 0
+          fi
+
+      - name: Rebase develop onto main
+        run: |
+          # Checkout the latest develop branch
+          git checkout develop
+          git pull origin develop --ff-only  # Ensure it's up to date
+
+          # Set upstream in case it's missing
+          git branch --set-upstream-to=origin/develop develop
+
+          # Rebase develop onto main
+          if git rebase origin/main; then
+            git push origin develop --force-with-lease
+            echo "✅ Successfully rebased develop onto main"
+          else
+            git rebase --abort
+            echo "❌ Rebase failed due to conflicts. Manual intervention required."
+            exit 1
+          fi
