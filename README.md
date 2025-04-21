@@ -1,10 +1,13 @@
 # Indradhanu Website
+
 This project was bootstrapped with React.
 
-## Available Scripts
+## Useful Scripts
+
 In the project directory, you can run:
 
 ### `npm start`
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
@@ -12,162 +15,159 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `npm run build`
+
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified, and the filenames are included in the hashes.\
 Your app is ready to be deployed!
 
-## Learn More
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
 [//]: <> (Still needs modifications)
-# Folder and File Naming Conventions in React Application
+
+## Folder and File Naming Conventions in React Application
+
 This section outlines the naming conventions and folder structure followed in this React application to maintain consistency, readability, and scalability.
 
-## Folder Structure
+### Folder Structure
 
-### 1. **src**
-   The main application code is stored under the `src` directory. It typically contains the following subfolders:
+#### 1. **src**
 
-   ```
-   src/
-   ├── assets/
-   ├── components/
-   ├── pages/
-   ├── hooks/
-   ├── utils/
-   ├── services/
-   ├── styles/
-   └── App.js
-   ```
+The main application code is stored under the `src` directory. It typically contains the following subfolders:
 
-### 2. **assets**
-   The `assets/` folder contains static resources such as images, fonts, or icons. It's recommended to categorize them based on their type.
+```
+src/
+├── assets/
+├── components/
+├── pages/
+├── hooks/
+├── utils/
+├── services/
+├── styles/
+└── App.js
+```
 
-   ```
-   src/assets/
-   ├── images/
-   ├── fonts/
-   └── icons/
-   ```
+#### 2. **assets**
 
-   - **Naming:** Files should be named in `kebab-case`, e.g., `logo-header.png`, `background-image.jpg`.
+The `assets/` folder contains static resources such as images, fonts, or icons. It's recommended to categorize them based on their type.
 
-### 3. **components**
-   The `components/` folder holds reusable React components that can be used across the app.
+```
+src/assets/
+├── images/
+├── fonts/
+└── icons/
+```
 
-   ```
-   src/components/
-   ├── Button/
-   ├── Navbar/
-   ├── Footer/
-   └── Card/
-   ```
+- **Naming:** Files should be named in `kebab-case`, e.g., `logo-header.png`, `background-image.jpg`.
 
-   - **Naming:** Each component has its own folder, with the name following `PascalCase`. The component's file name should match the folder name (e.g., `Navbar/Navbar.js`).
-   - **Test and Style Files:** Any associated styles or tests should reside in the same folder:
-     ```
-     src/components/Navbar/
-     ├── Navbar.js
-     ├── Navbar.test.js
-     └── Navbar.css
-     ```
+#### 3. **components**
 
-### 4. **pages**
-   The `pages/` folder contains components corresponding to entire views or pages in the app.
+The `components/` folder holds reusable React components that can be used across the app.
 
-   ```
-   src/pages/
-   ├── Home/
-   ├── About/
-   └── Contact/
-   ```
+```
+src/components/
+├── Button/
+├── Navbar/
+├── Footer/
+└── Card/
+```
 
-   - **Naming:** Similar to components, each page should have its own folder and follow the `PascalCase` naming convention. The main page component file should match the folder name (e.g., `Home/Home.js`).
-   - **Test and Style Files:** Test and style files should be kept alongside the page component (e.g., `Home/Home.test.js`, `Home/Home.css`).
+- **Naming:** Each component has its own folder, with the name following `PascalCase`. The component's file name should match the folder name (e.g., `Navbar/Navbar.js`).
+- **Test and Style Files:** Any associated styles or tests should reside in the same folder:
 
-### 5. **hooks**
-   The `hooks/` folder stores custom React hooks.
+  ```
+  src/components/Navbar/
+  ├── Navbar.js
+  ├── Navbar.test.js
+  └── Navbar.css
+  ```
 
-   ```
-   src/hooks/
-   ├── useFetch.js
-   └── useAuth.js
-   ```
+#### 4. **pages**
 
-   - **Naming:** Hook files follow `camelCase`, starting with the `use` prefix to follow the convention (e.g., `useFetch.js`).
+The `pages/` folder contains components corresponding to entire views or pages in the app.
 
-### 6. **utils**
-   The `utils/` folder contains helper functions and utility files that can be used throughout the app.
+```
+src/pages/
+├── Home/
+├── About/
+└── Contact/
+```
 
-   ```
-   src/utils/
-   ├── formatDate.js
-   └── calculateDiscount.js
-   ```
+- **Naming:** Similar to components, each page should have its own folder and follow the `PascalCase` naming convention. The main page component file should match the folder name (e.g., `Home/Home.js`).
+- **Test and Style Files:** Test and style files should be kept alongside the page component (e.g., `Home/Home.test.js`, `Home/Home.css`).
 
-   - **Naming:** Utility files use `camelCase` naming convention (e.g., `formatDate.js`).
+#### 5. **hooks**
 
-### 7. **services**
-   The `services/` folder contains API service calls and logic related to external data.
+The `hooks/` folder stores custom React hooks.
 
-   ```
-   src/services/
-   ├── authService.js
-   └── taskService.js
-   ```
+```
+src/hooks/
+├── useFetch.js
+└── useAuth.js
+```
 
-   - **Naming:** Service files are named in `camelCase` (e.g., `authService.js`).
+- **Naming:** Hook files follow `camelCase`, starting with the `use` prefix to follow the convention (e.g., `useFetch.js`).
 
-### 8. **styles**
-   The `styles/` folder stores global styles, variables, and mixins for the app.
+#### 6. **utils**
 
-   ```
-   src/styles/
-   ├── variables.css
-   └── global.css
-   ```
+The `utils/` folder contains helper functions and utility files that can be used throughout the app.
 
-   - **Naming:** Use `kebab-case` for CSS files (e.g., `global.css`, `variables.css`).
+```
+src/utils/
+├── formatDate.js
+└── calculateDiscount.js
+```
+
+- **Naming:** Utility files use `camelCase` naming convention (e.g., `formatDate.js`).
+
+#### 7. **services**
+
+The `services/` folder contains API service calls and logic related to external data.
+
+```
+src/services/
+├── authService.js
+└── taskService.js
+```
+
+- **Naming:** Service files are named in `camelCase` (e.g., `authService.js`).
+
+#### 8. **styles**
+
+The `styles/` folder stores global styles, variables, and mixins for the app.
+
+```
+src/styles/
+├── variables.css
+└── global.css
+```
+
+- **Naming:** Use `kebab-case` for CSS files (e.g., `global.css`, `variables.css`).
 
 ## File Naming Conventions
 
 ### 1. **Component Files:**
-   - **Naming Convention:** Use `PascalCase` for all component files. Example:
-     - `Button.js`
-     - `Navbar.js`
-   - Each component should be in its own folder with the same name.
+
+- **Naming Convention:** Use `PascalCase` for all component files. Example:
+  - `Button.js`
+  - `Navbar.js`
+- Each component should be in its own folder with the same name.
 
 ### 2. **Style Files:**
-   - **Naming Convention:** Use `PascalCase.css` or `.module.css` if using CSS modules.
-     - Example: `Button.css` or `Button.module.css`.
+
+- **Naming Convention:** Use `PascalCase.css` or `.module.css` if using CSS modules.
+  - Example: `Button.css` or `Button.module.css`.
 
 ### 3. **Test Files:**
-   - **Naming Convention:** Use `PascalCase.test.js` or `PascalCase.spec.js` for test files corresponding to components or pages.
-     - Example: `Button.test.js`, `Navbar.test.js`.
+
+- **Naming Convention:** Use `PascalCase.test.js` or `PascalCase.spec.js` for test files corresponding to components or pages.
+  - Example: `Button.test.js`, `Navbar.test.js`.
 
 ### 4. **Hooks, Utils, and Services:**
-   - **Naming Convention:** Use `camelCase` for hook, utility, and service files. Example:
-     - `useFetch.js`
-     - `calculateDiscount.js`
-     - `authService.js`
+
+- **Naming Convention:** Use `camelCase` for hook, utility, and service files. Example:
+  - `useFetch.js`
+  - `calculateDiscount.js`
+  - `authService.js`
 
 ## General Naming Guidelines
 

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
-import Hamburger from "../Hamburger/Hamburger";
-import indradhanuLogo from "../../assets/images/indradhanu-logo.png";
+import Hamburger from "../hamburger/Hamburger";
+import indradhanuLogo from "../../../assets/images/indradhanu-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
@@ -17,9 +18,7 @@ const Navbar = () => {
   const scrollToSection = (sectionId) => {
     navigate("/");
     setTimeout(() => {
-      document
-        .getElementById(sectionId)
-        ?.scrollIntoView({ behavior: "smooth" });
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
     }, 100); // Small delay to ensure navigation completes
   };
 
@@ -38,7 +37,7 @@ const Navbar = () => {
           <li>
             <b>
               <Link to="/vibhinn" className="vibhinn-text">
-                Vibhinn'24
+                Vibhinn'25
               </Link>
             </b>
           </li>
@@ -46,32 +45,27 @@ const Navbar = () => {
             <Link to="/projects">Our Projects</Link>
           </li>
           <li>
-            <button onClick={() => scrollToSection("resources")}>
+            <HashLink smooth to="/#resources">
               Resources
-            </button>
+            </HashLink>
           </li>
           <li>
-            <button onClick={() => scrollToSection("contact-us")}>
+            <HashLink smooth to="/#contact-us">
               Contact Us
-            </button>
+            </HashLink>
           </li>
           <li>
             <Link to="/be-an-ally">Be an Ally</Link>
           </li>
+
+          <div className="nav-social">
+            <a href="https://instagram.com/indradhanu.iitd" target="_blank" rel="noopener noreferrer" className="instagram-gradient">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+          </div>
         </ul>
-        <div className="nav-social">
-          <a
-            href="https://instagram.com/indradhanu.iitd"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-        </div>
       </div>
-      {window.innerWidth < 768 && (
-        <Hamburger isOpen={isMobileMenuOpen} toggleMenu={toggleMenu} />
-      )}
+      {window.innerWidth < 768 && <Hamburger isOpen={isMobileMenuOpen} toggleMenu={toggleMenu} />}
     </nav>
   );
 };

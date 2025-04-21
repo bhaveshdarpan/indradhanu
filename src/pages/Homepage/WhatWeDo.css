@@ -46,10 +46,23 @@
   border-radius: 40px;
   padding: 5vh 3vw;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content */
+  text-align: center; /* Center align text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.what-we-do-card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
 .what-we-do-card i {
   font-size: 3rem;
+  color: #286a4a; /* Match icon color with theme */
+  margin-bottom: 1.5vh; /* Add spacing below the icon */
 }
 
 .what-we-do-card h4 {
@@ -75,6 +88,12 @@
   border-radius: 50px;
   color: #2d6c4e;
   font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.what-we-do-card a:hover {
+  background-color: #30c67e; /* Change background color on hover */
+  color: white; /* Change text color on hover */
 }
 
 /* Responsive styles */

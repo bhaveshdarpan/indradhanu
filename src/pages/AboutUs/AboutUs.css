@@ -71,11 +71,13 @@
   width: 80%;
   margin: auto;
 }
+
 li {
   display: list-item;
   text-align: -webkit-match-parent;
   unicode-bidi: isolate;
 }
+
 .charter-inner li {
   margin-bottom: 2vh;
 }
@@ -146,10 +148,11 @@ li {
   margin: auto;
 }
 
-/* Button Styles */
 .team-buttons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
@@ -157,13 +160,14 @@ li {
   background-color: #ffad62;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 12px 24px;
   margin: 5px;
-  border-radius: 16px;
+  border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
+  font-family: inherit;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .team-buttons button:hover {
@@ -175,7 +179,10 @@ li {
   background-color: #ec7100;
 }
 
-/* Responsiveness */
+.team-buttons button:active {
+  transform: translateY(0);
+}
+
 .student-cards {
   display: flex;
   flex-wrap: wrap;

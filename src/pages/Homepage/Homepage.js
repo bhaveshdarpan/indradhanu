@@ -1,9 +1,9 @@
 import React from "react";
 import "./Homepage.css";
 import homeImg from "../../assets/images/home.png";
-import WhoWeAre from "../WhoWeAre/WhoWeAre";
-import WhatWeDo from "../WhatWeDo/WhatWeDo";
-import Resources from "../Resources/Resources";
+import WhoWeAre from "./WhoWeAre";
+import WhatWeDo from "./WhatWeDo";
+import Resources from "./Resources";
 import ContactUs from "../ContactUs/ContactUs";
 
 const Homepage = () => {

@@ -3,7 +3,7 @@ import "./StudentCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-function StudentCard({ name, role, imgSrc, link }) {
+const StudentCard = ({ name, role, imgSrc, link }) => {
   return (
     <div className="student-card">
       <div className="linkedin-icon">
@@ -16,6 +16,6 @@ function StudentCard({ name, role, imgSrc, link }) {
       <p>{role}</p>
     </div>
   );
-}
+};
 
 export default StudentCard;
