@@ -1,5 +1,5 @@
 {
-  "homepage": "https://bhaveshdarpan.github.io/",
+  "homepage": "https://bhaveshdarpan.github.io/indradhanu",
   "name": "indradhanu",
   "version": "0.1.0",
   "private": true,
@@ -29,7 +29,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build -b gh-pages -u \"github-actions-bot <actions@github.com>\" -r https://x-access-token:${GITHUB_TOKEN}@github.com/bhaveshdarpan/indradhanu.git",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
