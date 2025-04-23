@@ -15,12 +15,12 @@ const Navbar = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const scrollToSection = (sectionId) => {
-    navigate("/");
-    setTimeout(() => {
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-    }, 100); // Small delay to ensure navigation completes
-  };
+  // const scrollToSection = (sectionId) => {
+  //   navigate("/");
+  //   setTimeout(() => {
+  //     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  //   }, 100); // Small delay to ensure navigation completes
+  // };
 
   return (
     <nav className="navbar">
