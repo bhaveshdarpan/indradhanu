@@ -22,11 +22,11 @@ const FooterRight = () => (
 const FooterSeparator = () => <div className="footer-separator"></div>;
 
 const FooterCopyright = () => (
-  <p className="copyright">
+  <p className="text-center text-sm text-gray-600">
     &copy; {new Date().getFullYear()} Indradhanu, IIT Delhi. All rights reserved.
     <br />
     Developed with ❤️ by{" "}
-    <a href="https://github.com/bhaveshdarpan" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/bhaveshdarpan" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
       Bhavesh Darpan
     </a>
     .
