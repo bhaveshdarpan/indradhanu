@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/indradhanu/static/css/main.96a905f6.css",
-    "main.js": "/indradhanu/static/js/main.09c4a71e.js",
+    "main.js": "/indradhanu/static/js/main.5d6b7156.js",
     "static/js/488.01c040c1.chunk.js": "/indradhanu/static/js/488.01c040c1.chunk.js",
     "static/media/vibhinn-flyer.svg": "/indradhanu/static/media/vibhinn-flyer.ad7029b98cfc653be51a14bba13e0603.svg",
     "static/media/about-us.png": "/indradhanu/static/media/about-us.a2051f77c85ea43f314d.png",
@@ -24,11 +24,11 @@
     "static/media/angelie.jpeg": "/indradhanu/static/media/angelie.1a9a44025a6ad68277aa.jpeg",
     "index.html": "/indradhanu/index.html",
     "main.96a905f6.css.map": "/indradhanu/static/css/main.96a905f6.css.map",
-    "main.09c4a71e.js.map": "/indradhanu/static/js/main.09c4a71e.js.map",
+    "main.5d6b7156.js.map": "/indradhanu/static/js/main.5d6b7156.js.map",
     "488.01c040c1.chunk.js.map": "/indradhanu/static/js/488.01c040c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96a905f6.css",
-    "static/js/main.09c4a71e.js"
+    "static/js/main.5d6b7156.js"
   ]
 }
