@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/indradhanu/static/css/main.c8958f3b.css",
-    "main.js": "/indradhanu/static/js/main.80b55e59.js",
+    "main.css": "/indradhanu/static/css/main.96a905f6.css",
+    "main.js": "/indradhanu/static/js/main.09c4a71e.js",
     "static/js/488.01c040c1.chunk.js": "/indradhanu/static/js/488.01c040c1.chunk.js",
     "static/media/vibhinn-flyer.svg": "/indradhanu/static/media/vibhinn-flyer.ad7029b98cfc653be51a14bba13e0603.svg",
     "static/media/about-us.png": "/indradhanu/static/media/about-us.a2051f77c85ea43f314d.png",
@@ -23,12 +23,12 @@
     "static/media/arudra.jpeg": "/indradhanu/static/media/arudra.4635f4eab7e764981b25.jpeg",
     "static/media/angelie.jpeg": "/indradhanu/static/media/angelie.1a9a44025a6ad68277aa.jpeg",
     "index.html": "/indradhanu/index.html",
-    "main.c8958f3b.css.map": "/indradhanu/static/css/main.c8958f3b.css.map",
-    "main.80b55e59.js.map": "/indradhanu/static/js/main.80b55e59.js.map",
+    "main.96a905f6.css.map": "/indradhanu/static/css/main.96a905f6.css.map",
+    "main.09c4a71e.js.map": "/indradhanu/static/js/main.09c4a71e.js.map",
     "488.01c040c1.chunk.js.map": "/indradhanu/static/js/488.01c040c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8958f3b.css",
-    "static/js/main.80b55e59.js"
+    "static/css/main.96a905f6.css",
+    "static/js/main.09c4a71e.js"
   ]
 }
