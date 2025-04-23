@@ -1,26 +1,29 @@
 .hamburger {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 40px; /* Adjust width as needed */
-  height: 25px; /* Adjust height as needed */
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Adjusted width remains the same */
+  height: 24px; /* Reduced height to bring stacks closer */
+  gap: 4px; /* Reduced gap between stacks */
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .stack {
-  height: 4px; /* Thickness of each stack */
+  height: 4px; /* Thickness of each stack remains the same */
   width: 100%;
-  background-color: #333; /* Color of the stacks */
-  border-radius: 5px; /* Rounded edges */
+  background-color: #823e7d;
+  border-radius: 5px;
   transition: all 0.3s ease;
 }
 
-/* Animation for the active state */
+/* Active state transforms for a smooth cross animation */
 .hamburger.active .stack:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger.active .stack:nth-child(2) {
+  transform: translateY(-8px) rotate(-45deg);
   opacity: 0;
 }
