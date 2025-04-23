@@ -8,12 +8,47 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./Navbar.css";
 import Hamburger from "../ui/hamburger/Hamburger.js";
 
+const navigationItems = [
+  { label: "About Us", to: "/about-us" },
+  { label: "Vibhinn'25", to: "/vibhinn", className: "vibhinn-text", isBold: true },
+  { label: "Our Projects", to: "/projects" },
+  { label: "Resources", to: "/#resources", isHashLink: true },
+  { label: "Contact Us", to: "/#contact-us", isHashLink: true },
+  { label: "Be an Ally", to: "/be-an-ally" },
+];
+
+const MenuList = ({ onLinkClick }) => (
+  <NavigationMenuList>
+    {navigationItems.map((item) => (
+      <NavigationMenuItem key={item.label}>
+        <NavigationMenuLink asChild>
+          {item.isHashLink ? (
+            <HashLink smooth to={item.to} onClick={onLinkClick}>
+              {item.isBold ? <b className={item.className || ""}>{item.label}</b> : item.label}
+            </HashLink>
+          ) : (
+            <Link to={item.to} onClick={onLinkClick} className={item.className || ""}>
+              {item.isBold ? <b>{item.label}</b> : item.label}
+            </Link>
+          )}
+        </NavigationMenuLink>
+      </NavigationMenuItem>
+    ))}
+  </NavigationMenuList>
+);
+
+const SocialLinks = () => (
+  <div className="nav-social">
+    <a href="https://instagram.com/indradhanu.iitd" target="_blank" rel="noopener noreferrer" className="instagram-gradient">
+      <FontAwesomeIcon icon={faInstagram} />
+    </a>
+  </div>
+);
+
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
+  const toggleMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   return (
     <NavigationMenu className="navbar">
@@ -23,49 +58,8 @@ const Navbar = () => {
         </Link>
 
         <div className="nav-links desktop-menu">
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/about-us">About Us</Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/vibhinn" className="vibhinn-text">
-                  <b>Vibhinn'25</b>
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/projects">Our Projects</Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <HashLink smooth to="/#resources">
-                  Resources
-                </HashLink>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <HashLink smooth to="/#contact-us">
-                  Contact Us
-                </HashLink>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/be-an-ally">Be an Ally</Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-          <div className="nav-social">
-            <a href="https://instagram.com/indradhanu.iitd" target="_blank" rel="noopener noreferrer" className="instagram-gradient">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </div>
+          <MenuList />
+          <SocialLinks />
         </div>
 
         <div className="mobile-menu-button" onClick={toggleMenu}>
@@ -75,55 +69,8 @@ const Navbar = () => {
 
       {mobileMenuOpen && (
         <div className="mobile-menu">
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/about-us" onClick={() => setMobileMenuOpen(false)}>
-                  About Us
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/vibhinn" onClick={() => setMobileMenuOpen(false)} className="vibhinn-text">
-                  <b>Vibhinn'25</b>
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/projects" onClick={() => setMobileMenuOpen(false)}>
-                  Our Projects
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <HashLink smooth to="/#resources" onClick={() => setMobileMenuOpen(false)}>
-                  Resources
-                </HashLink>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <HashLink smooth to="/#contact-us" onClick={() => setMobileMenuOpen(false)}>
-                  Contact Us
-                </HashLink>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/be-an-ally" onClick={() => setMobileMenuOpen(false)}>
-                  Be an Ally
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-          <div className="nav-social">
-            <a href="https://instagram.com/indradhanu.iitd" target="_blank" rel="noopener noreferrer" className="instagram-gradient">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </div>
+          <MenuList onLinkClick={() => setMobileMenuOpen(false)} />
+          <SocialLinks />
         </div>
       )}
     </NavigationMenu>
